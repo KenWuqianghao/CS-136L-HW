@@ -1,0 +1,5 @@
+Bug report for: Lab7Q4
+Memory error: Using uninitialized memory
+Line number (main.c): 8
+Memory error: Dereferencing/accessing a NULL pointer or an invalid address.
+Line number (main.c): 10

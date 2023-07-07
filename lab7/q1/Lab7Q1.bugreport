@@ -1,0 +1,3 @@
+Bug report for: Lab7Q1
+Memory error: Using uninitialized memory
+Line number (main.c): 15

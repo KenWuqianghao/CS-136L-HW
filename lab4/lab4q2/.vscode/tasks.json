@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "CS136 Build Task",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"/u2/cs136l/pub/common/cs136.o",
+				"/u2/cs136l/pub/lab4/q2/vec.o",
+				"/u2/cs136l/pub/lab4/q2/linalg.o",
+				"${file}",
+				"-std=c99",
+				"-Wall",
+				"-I/u2/cs136l/pub/common",
+				"-I/u2/cs136l/pub/lab4/q2",
+				"-o",
+				"myprogram"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		}
+	]
+}

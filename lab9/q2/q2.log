@@ -1,0 +1,79 @@
+Breakpoint 1 at 0x4005bb: file fib.c, line 5.
+Breakpoint 2 at 0x40063b: file fib.c, line 14.
+Starting program: /u9/k6wu/cs136l/lab9/q2/myfib 5
+
+Breakpoint 1, computeFibs (fibs=0x602260, length=5) at fib.c:5
+Hardware watchpoint 3: i
+Continuing.
+
+Hardware watchpoint 3: i
+
+Old value = 0
+New value = 1
+0x000000000040061c in computeFibs (fibs=0x602260, length=5) at fib.c:8
+Continuing.
+
+Hardware watchpoint 3: i
+
+Old value = 1
+New value = 2
+0x000000000040061c in computeFibs (fibs=0x602260, length=5) at fib.c:8
+Continuing.
+
+Hardware watchpoint 3: i
+
+Old value = 2
+New value = 3
+0x000000000040061c in computeFibs (fibs=0x602260, length=5) at fib.c:8
+Continuing.
+
+Watchpoint 3 deleted because the program has left the block in
+which its expression is valid.
+main (argc=2, argv=0x7fffffffe798) at fib.c:39
+Continuing.
+
+Breakpoint 2, sumFibs (fibs=0x602260, length=5) at fib.c:14
+Hardware watchpoint 4: j
+Continuing.
+
+Hardware watchpoint 4: j
+
+Old value = 3
+New value = 0
+sumFibs (fibs=0x602260, length=5) at fib.c:15
+Continuing.
+
+Hardware watchpoint 4: j
+
+Old value = 0
+New value = 1
+0x0000000000400671 in sumFibs (fibs=0x602260, length=5) at fib.c:16
+Continuing.
+
+Hardware watchpoint 4: j
+
+Old value = 1
+New value = 2
+0x0000000000400671 in sumFibs (fibs=0x602260, length=5) at fib.c:16
+Continuing.
+
+Hardware watchpoint 4: j
+
+Old value = 2
+New value = 3
+0x0000000000400671 in sumFibs (fibs=0x602260, length=5) at fib.c:16
+Continuing.
+
+Hardware watchpoint 4: j
+
+Old value = 3
+New value = 4
+0x0000000000400671 in sumFibs (fibs=0x602260, length=5) at fib.c:16
+Continuing.
+
+Watchpoint 4 deleted because the program has left the block in
+which its expression is valid.
+0x0000000000400757 in main (argc=2, argv=0x7fffffffe798) at fib.c:39
+Continuing.
+[Inferior 1 (process 15774) exited normally]
+The program is not being run.

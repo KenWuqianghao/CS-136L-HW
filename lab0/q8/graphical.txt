@@ -1,0 +1,10 @@
+Pro Tip: While it is possible to run graphical applications 
+on remote machines, the experience is often laggy. Even simple 
+programs such as a PDF file reader, when opened on a remote 
+machine, will give you a poor experience. For this reason, if 
+you ever encounter a PDF document on a remote machine, it makes 
+sense to copy the file over to your own machine and then open it 
+there.
+
+Next step: copy the file /u2/cs136l/pub/lab0/doc.pdf to your machine and read it.
+Do not forget to add this file to your list of visited files.

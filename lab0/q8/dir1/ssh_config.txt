@@ -1,0 +1,12 @@
+Pro Tip: while setting up an ssh configuration by editing 
+~/.ssh/config seems like a chore, imagine the number of times 
+you will be connecting to the remote servers. Well, maybe you 
+cannot imagine just yet. Trust us, it will be a lot. Taking 
+the time to correctly setup the config file will save you time 
+and avoid the frustration of making minor typos in the long 
+server address.
+
+Next step: go up one directory level and then into the directory 
+labeled temp. List the contents of the directory and then read 
+the file that looks like the name of a course that could be offered 
+at UW.

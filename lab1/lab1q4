@@ -1,0 +1,1 @@
+egrep "^....x$" /usr/share/dict/words

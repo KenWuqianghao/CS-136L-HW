@@ -1,0 +1,28 @@
+{
+	"tasks": [
+		{
+				  "type": "cppbuild",
+				  "label": "clang build file",
+				  "command": "/usr/bin/clang",
+				  "args": [
+					"-fdiagnostics-color=always",
+					"-g",
+					"/u2/cs136l/pub/common/cs136.o",
+					"${file}",
+					"-std=c99",
+					"-Wall",
+					"-I/u2/cs136l/pub/common",
+					"-o",
+					"myprogram"
+	],
+				  "options": {
+					  "cwd": "${fileDirname}"
+				  },
+				  "problemMatcher": [
+					  "$gcc"
+				  ],
+				  "group": "build",
+				  "detail": "compiler: /usr/bin/clang"
+			  }
+		  ],
+}

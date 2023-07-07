@@ -1,0 +1,8 @@
+>>> cs136tools version 1.5
+>>> [main.c|main|9] >> "Printing v.x"
+>>> [main.c|main|10] >> v.x => 2
+>>> [main.c|main|11] >> "Printing v.y"
+>>> [main.c|main|12] >> v.y => 4
+>>> [main.c|main|14] >> "Printing n"
+>>> [main.c|main|15] >> n => 20
+[1] + Done                       "/usr/bin/gdb" --interpreter=mi --tty=${DbgTerm} 0<"/tmp/Microsoft-MIEngine-In-mqpi5jhw.fao" 1>"/tmp/Microsoft-MIEngine-Out-s1uwahmo.mka"

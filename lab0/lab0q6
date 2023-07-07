@@ -1,0 +1,1 @@
+scp cs136lt@linux.student.cs.uwaterloo.ca:/var/tmp/script.js ./MyWebsite/

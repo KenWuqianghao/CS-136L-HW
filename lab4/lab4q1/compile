@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Check that the script is provided at least an executable name and a .c or .o file
+if [[ $# -lt 2 ]]; then
+    echo "Error: This script requires at least an executable name and a C file." >&2
+    exit 5
+fi
+
+# Parse the input arguments
+exec_name=$1
+in_file=""
+args_file=""
+c_files=()
+while [[ $# -gt 1 ]]; do
+    case $2 in
+        *.in)
+            in_file=$2
+            shift
+            ;;
+        *.args)
+            args_file=$2
+            shift
+            ;;
+        *.c|*.o)
+            c_files+=("$2")
+            shift
+            ;;
+        *)
+            break
+            ;;
+    esac
+done
+
+# If no .c or .o files were provided, exit with an error
+if [[ ${#c_files[@]} -eq 0 ]]; then
+    echo "Error: This script requires at least a C file." >&2
+    exit 5
+fi
+
+# Compile the program
+if [[ ${c_files[-1]} == *.o ]]; then
+    # If the last file is a .o file, use it directly
+    clang -o $exec_name "${c_files[@]}" "${@:(( ${#c_files[@]} + 1 ))}"
+else
+    # Otherwise, compile the program
+    clang -o $exec_name "${c_files[@]}" "${@:(( ${#c_files[@]} + 1 ))}" || exit $?
+fi
+
+# If provided, run the executable with the input and arguments from the files
+if [[ -n $in_file || -n $args_file ]]; then
+    ./$exec_name $(< $args_file) < $in_file
+fi

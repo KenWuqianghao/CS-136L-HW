@@ -1,0 +1,6 @@
+Learning to efficiently use the linux command line and a 
+text editor like Vim takes time. The magic formula, if 
+you can call it that, is to not give up and just continue 
+to explore and practice.
+
+Next Step: None

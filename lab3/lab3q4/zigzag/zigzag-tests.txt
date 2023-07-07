@@ -1,0 +1,4 @@
+empty
+example
+one
+same

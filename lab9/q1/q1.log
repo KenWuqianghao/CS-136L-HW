@@ -1,0 +1,88 @@
+Breakpoint 1 at 0x4004df: file main.c, line 5.
+Breakpoint 2 at 0x40060c: file black_box.c, line 27.
+Starting program: /u9/k6wu/cs136l/lab9/q1/a.out 
+
+Breakpoint 1, main () at main.c:5
+Hardware watchpoint 3: x
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 0
+New value = 10
+main () at main.c:6
+Continuing.
+
+Breakpoint 2, foo (z=0x7fffffffe6b8) at black_box.c:27
+Breakpoint 4 at 0x400538: file black_box.c, line 5.
+Breakpoint 5 at 0x40057c: file black_box.c, line 11.
+Breakpoint 6 at 0x4005ce: file black_box.c, line 19.
+Continuing.
+
+Breakpoint 5, bar (p=0x7fffffffe698) at black_box.c:11
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 10
+New value = 7
+bar (p=0x7fffffffe698) at black_box.c:15
+Continuing.
+
+Breakpoint 4, rab (a=0x7fffffffe6b8) at black_box.c:5
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 7
+New value = 6
+rab (a=0x7fffffffe6b8) at black_box.c:5
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 6
+New value = 4
+rab (a=0x7fffffffe6b8) at black_box.c:5
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 4
+New value = 1
+rab (a=0x7fffffffe6b8) at black_box.c:5
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 1
+New value = 0
+foo (z=0x7fffffffe6b8) at black_box.c:31
+Continuing.
+
+Breakpoint 6, oof (original=10, updated=1, ptr=0x7fffffffe6b8)
+    at black_box.c:19
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 0
+New value = 10
+oof (original=10, updated=1, ptr=0x7fffffffe6b8) at black_box.c:22
+Continuing.
+
+Hardware watchpoint 3: x
+
+Old value = 10
+New value = 0
+oof (original=10, updated=1, ptr=0x7fffffffe6b8) at black_box.c:24
+Continuing.
+
+Watchpoint 3 deleted because the program has left the block in
+which its expression is valid.
+__libc_start_main (main=0x4004d0 <main>, argc=1, argv=0x7fffffffe7a8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7fffffffe798) at ../csu/libc-start.c:344
+Continuing.
+[Inferior 1 (process 11215) exited with code 03]
+quit

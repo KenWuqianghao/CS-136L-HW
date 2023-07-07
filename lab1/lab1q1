@@ -1,0 +1,1 @@
+egrep [spot]{4} /usr/share/dict/words | egrep ^....$ |egrep ^[^s]*s[^s]*$ | egrep ^[^p]*p[^p]*$ | egrep ^[^o]*o[^o]*$ | egrep ^[^t]*t[^t]*$

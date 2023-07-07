@@ -1,0 +1,10 @@
+noArgs
+oneArg
+fourArgs
+invalidMode
+zigIncrease
+zigDecrease
+zigSame
+zagIncrease
+zagDecrease
+zagSame

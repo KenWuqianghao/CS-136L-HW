@@ -1,0 +1,9 @@
+if [[ $# -eq 3 ]]; then
+  clang main.c *.o -o viewer -D"$1" -D"$2" -D"$3"
+elif [[ $# -eq 2 ]]; then
+  clang main.c *.o -o viewer -D"$1" -D"$2"
+elif [[ $# -eq 1 ]]; then
+  clang main.c *.o -o viewer -D"$1"
+else
+  clang main.c *.o -o viewer
+fi

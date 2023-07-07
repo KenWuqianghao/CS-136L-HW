@@ -1,0 +1,10 @@
+Pro Tip: learn to use some common terminal shortcuts; it will make you 
+even more productive on the linux command line. For example, if you hit 
+tab while writing a command or a path, the shell will attempt to complete 
+the command/path for you if it knows of a unique completion. If a unique 
+completion is not available, you can hit tab twice in quick succession to 
+get a list of possible completions.
+
+Next step: Go to the directory named foo that is present in the same 
+directory as this file. Read the file in that directory that begins 
+with the letters bar 
